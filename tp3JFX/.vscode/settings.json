@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "C:/Users/user/Desktop/javafx/javafx-sdk-23.0.2/lib/**/*.jar"
+    ],
+    "java.project.resourceFilters": [],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-22",
+            "path": "C:/Users/user/Desktop/jdk-22",
+            "default": true
+        }
+    ]
+}

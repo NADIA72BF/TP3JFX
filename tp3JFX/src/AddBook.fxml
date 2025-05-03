@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBookControlor">
+   <children>
+      <Label layoutX="14.0" layoutY="64.0" text="Prenom" />
+      <Label layoutX="14.0" layoutY="126.0" text="Nom" />
+      <Label layoutX="20.0" layoutY="179.0" text="Adresse Email" />
+      <TextField fx:id="tfFirstName" layoutX="300.0" layoutY="70.0" />
+      <TextField fx:id="tfLastName" layoutX="300.0" layoutY="132.0" />
+      <TextField fx:id="tfEmail" layoutX="300.0" layoutY="185.0" />
+      <Button fx:id="addBtn" layoutX="432.0" layoutY="246.0" mnemonicParsing="false" onAction="#addBtn" text="Ajouter a la table" />
+      <TableView fx:id="table" layoutY="286.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="firstNameCol" prefWidth="202.0" text="Prenom" />
+            <TableColumn fx:id="lastNameCol" prefWidth="182.0" text="Nom" />
+            <TableColumn fx:id="emailCol" prefWidth="215.0" text="Email" />
+        </columns>
+    </TableView>
+        <Button fx:id="removeBtn" layoutX="33.0" layoutY="510.0" mnemonicParsing="false" onAction="#removeBtn" text="Supprimer" />
+        <Button fx:id="importBtn" layoutX="192.0" layoutY="510.0" mnemonicParsing="false" onAction="#importBtn" text="Importer" />
+        <Button fx:id="exportBtn" layoutX="344.0" layoutY="510.0" mnemonicParsing="false" onAction="#exportBtn" text="Exporter" />
+        <Button fx:id="quitBtn" layoutX="500.0" layoutY="510.0" mnemonicParsing="false" onAction="#quitBtn" text="Quitter" />
+   </children>
+</Pane>
